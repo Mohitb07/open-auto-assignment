@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
@@ -12,7 +13,10 @@ const Index = () => {
         />
       }
     >
-      <Navbar />
+      <div className="p-5 md:px-[5rem] space-y-4">
+        <Navbar />
+        <Hero />
+      </div>
     </Main>
   );
 };
